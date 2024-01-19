@@ -27,15 +27,15 @@ export function TodosPage(){
 	const isCompleting = useSelector(selectIsCompleting);
 	const dispatch = useDispatch();
 	const debounceValue = useDebounce(searchQuery, 500);
-
+	// console.log(searchQuery)
 
 	function handleSort(){
-		sortTodos(sort, dispatch);
+		dispatch(sortTodos(sort));
 	};
 
 	useEffect(() => {
 		dispatch(changeIsLoading(true));
-		loadedTodos(dispatch, searchQuery);
+		dispatch(loadedTodos(searchQuery));
 	}, [debounceValue, refreshTodos]);
 
 	return(

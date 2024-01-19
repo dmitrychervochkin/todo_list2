@@ -29,7 +29,7 @@ export function EditTodo({handleEdit, ...props }){
 		event.preventDefault();
 		try{
 			if(isValid){
-				await editTodo(props.id, value, todos, dispatch);
+				await dispatch(editTodo(props.id, value, todos));
 				handleEdit();
 			}
 		} catch(error){

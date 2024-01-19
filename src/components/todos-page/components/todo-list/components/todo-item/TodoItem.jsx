@@ -16,7 +16,7 @@ export function TodoItem({ ...props }){
 	};
 
 	function handleComplete({target}){
-		completeTodo(props.id, target.checked, dispatch, isCompleting, refreshTodos)
+		dispatch(completeTodo(props.id, target.checked, isCompleting, refreshTodos))
 	};
 
 	function handleDelete({target}){

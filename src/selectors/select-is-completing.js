@@ -1,1 +1,1 @@
-export const selectIsCompleting = (state) => state.boolean.isCompleting;
+export const selectIsCompleting = (state) => state.booleanState.isCompleting;

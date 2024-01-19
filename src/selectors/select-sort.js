@@ -1,1 +1,1 @@
-export const selectSort = (state) => state.boolean.sort;
+export const selectSort = (state) => state.booleanState.sort;

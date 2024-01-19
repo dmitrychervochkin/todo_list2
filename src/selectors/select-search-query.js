@@ -1,1 +1,1 @@
-export const selectSearchQuery = (state) => state.utils.searchQuery;
+export const selectSearchQuery = (state) => state.utilsState.searchQuery;

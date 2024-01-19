@@ -1,1 +1,1 @@
-export const selectNote = (state) => state.utils.note;
+export const selectNote = (state) => state.utilsState.note;

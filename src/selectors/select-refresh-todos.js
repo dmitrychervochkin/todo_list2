@@ -1,1 +1,1 @@
-export const selectRefreshTodos = (state) => state.boolean.refreshTodos;
+export const selectRefreshTodos = (state) => state.booleanState.refreshTodos;

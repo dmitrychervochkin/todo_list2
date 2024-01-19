@@ -1,1 +1,1 @@
-export const selectIsLoading = (state) => state.boolean.isLoading;
+export const selectIsLoading = (state) => state.booleanState.isLoading;
